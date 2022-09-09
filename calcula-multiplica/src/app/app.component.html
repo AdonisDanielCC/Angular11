@@ -1,0 +1,23 @@
+<div class ="container">
+  <h1>{{titulo}}</h1>
+  <form >
+    <div class="form-group">
+      <label>numero 1</label>
+      <input type="number" class= "form-control"
+      placeholder="escribe el primer numero"
+      [(ngModel)] ="numero1"
+       name="numero1"/>
+    </div>
+    <div class="form-group">
+      <label>numero 2</label>
+      <input type="number" class= "form-control"
+      placeholder="escribe el segundo numero"
+      [(ngModel)] ="numero2"
+       name="numero2"/>
+    </div>
+    <br/>
+    <button type=" submit" class= "btn btn-primary" (click)="multiplica()"> resultado </button>
+  </form>
+  <p>resultado: {{resultado}}</p>
+
+</div>
